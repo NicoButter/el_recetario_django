@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugiere recetas y elimina las que no te gusten {% block title %}{% endblock %}</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Rubik+Iso&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/base.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1>Administra las recetas!</h1>
+        <h2>{% block section_title %}{% endblock %}</h2>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'receta_listado' %}">Listado tareas</a></li>
+                <li><a href="{% url 'receta_crear' %}">Crear</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <p>Todos los derechos reservados - Grupo 8 - Codo a Codo 2023</p>
+    </footer>
+</body>
+</html>

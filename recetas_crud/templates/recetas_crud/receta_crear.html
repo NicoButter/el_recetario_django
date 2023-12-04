@@ -1,0 +1,21 @@
+{% extends "recetas_crud/base.html" %}
+{% load static %}
+
+{% block title %} Crear nueva receta {% endblock %}
+{% block section_title %} Crear nueva Receta {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'receta_crear.css' %}">
+{% endblock %}
+
+{% block main %}
+    <article>
+        <h3>Complete los campos para su receta</h3>
+        <form method="POST" action="{% url 'receta_crear' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+    
+            <input type="submit">
+        </form>
+    </article>
+{% endblock %}

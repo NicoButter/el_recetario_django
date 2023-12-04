@@ -1,0 +1,20 @@
+{% extends "recetas_crud/base.html" %}
+{% load static %}
+
+{% block title %} Modificar receta {% endblock %}
+{% block section_title %} Modificar receta {% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/tareas_modificar.css' %}">
+{% endblock %}
+
+{% block main %}
+    <article>
+        <h3>La receta</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Actualizar">
+        </form>
+    </article>
+{% endblock %}
