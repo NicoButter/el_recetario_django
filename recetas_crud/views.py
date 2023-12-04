@@ -20,7 +20,7 @@ def index(request):
     return render(request, 'recetas_crud/index.html', context)
     
 def crear_tarea(request):
-    return HttpResponse("Trabajo en progreso - En esta vista se van a poder dar de alta nuevas tareas")
+    return HttpResponse("Trabajo en progreso - En esta vista se van a poder dar de alta nuevas recetas")
 
 # def tareas_listado(request):
 #     # Estoy yendo a la BBDD a buscar todas las tareas
@@ -42,7 +42,7 @@ def saludar_por_nombre(request, nombre_usuario):
 class RecetaListView(ListView):
     model = Receta
     context_object_name = 'receta_listado'
-    template_name = 'recetas_crud/tareas_listado.html'
+    template_name = 'recetas_crud/receta_listado.html'
 
 
 class RecetaCreateView(CreateView):

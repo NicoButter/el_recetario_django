@@ -76,9 +76,20 @@ WSGI_APPLICATION = 'el_recetario_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'recetas',
+        'USER': 'nicolas',
+        'PASSWORD': 'nicolas010203',
+        'HOST': 'localhost',  # Puedes dejarlo como 'localhost' si PostgreSQL está en la misma máquina
+        'PORT': '',  # Deja este campo vacío para usar el puerto predeterminado (5432)
     }
+    
+    
+    
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': BASE_DIR / 'db.sqlite3',
+    #}
 }
 
 
