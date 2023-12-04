@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilo general -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    
+    <!--Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- TITULO -->
+    <title>Las recetas del 8</title>
+</head>
+
+<body>
+    <!-- El header se carga de forma externa -->
+    <header id="header" class="header"></header>
+    
+    <section class="navegacion">
+        <nav class="nav">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="productos">
+            <h3>busca un producto</h3>
+            <form id="search-form" action="./pages/producto.html" method="get">
+                <input type="text" id="search-input" name="product-name" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>        
+    <main>
+        <section class="featured-recipe">
+            <h2>Receta del día</h2>
+            <div class="recipe-content">
+                <article>
+                    <img src="./images/BIANCA.jpeg" alt="Pizza Bianca">
+                    <h3>Pizza Bianca</h3>
+                    <p>Disfruta de esta deliciosa pizza casera con tomate, mozzarella y albahaca.</p>
+                    <a href="./pages/Natalia/bianca.html">Ver Receta</a>
+                </article>
+                <article>
+                    <h3>los Petersen te enseñan a hacer un cordero al asador</h3> <!-- Nuevo título del video -->
+                    <iframe src="https://www.youtube.com/embed/OFlcHy0Cz58" 
+                            title="Los Petersen en la Patagonia - Cordero patagónico al asador" 
+                            frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </article>
+            </div>
+        </section>
+
+        <section class="latest-recipes">
+            <h2>Últimas Recetas</h2>
+            <div class="recipe-container">
+                
+                <article>
+                    <img src="./images/salmon-a-la-plancha.jpg" alt="Salmon Grille">
+                    <h3>Salmon Grille</h3>
+                    <p>Prepara esta clásico plato de salmon grillado.</p>
+                    <a href="./pages/recetas_nicolas/salmon-grille.html">Ver Receta</a>
+                </article>
+
+                
+                <article class="choco">
+                    <img src="./images/ROQUEFORT.jpeg" alt="Salmon Grille">
+                    <h3>Pizza Roquefort</h3>
+                    <p>Prepara esta pizza deliciosa perfeccionada por Natalia!.</p>
+                    <a href="./pages/Natalia/roquefort.html">Ver Receta</a>
+                </article>
+
+                
+             
+            </div>
+
+            <article class="mapa">
+                <h3>hoy se destaca Buffalo! proba su carta!</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1041.6132626854817!2d-69.21392159644708!3d-51.61610488039495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6f94d2dd5b0eb%3A0x91362501ab152a27!2sBuffalo%20Rock!5e0!3m2!1ses!2sar!4v1698357395350!5m2!1ses!2sar" 
+                    style="border:1;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+        
+        
+        
+        
+        
+
+    </main>
+
+    <!-- El footer se carga de forma externa -->
+    <footer id="footer"></footer>
+    
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
