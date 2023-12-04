@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/receta.css">
+    
+    <!--Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Las recetas del 8</title>
+
+</head>
+<body>
+    
+    <!-- El header se carga de forma dinamica -->
+    <header id= "header" class="header"></header>
+    
+    <section class="navegacion">
+        <nav class="nav">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <!-- <li><a href="#">Recetas</a></li> -->
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="productos">
+            <h3>busca un producto</h3>
+            <form id="search-form" action="../producto.html" method="get">
+                <input type="text" id="search-input" name="product-name" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>   
+    <main>
+        <section class="receta-titulo">
+            <article>
+                <div class="texto">
+                    <h2>Salmon grillado</h2>
+                    <p>Aprende a realizar esta deliciosa receta de salmón grillado realizada por nuestro chef Nicolas Butterfield en minutos</p>
+                </div>
+            </article>    
+            <div class="receta-imagen"><img src="../../images/salmon-a-la-plancha.jpg" alt=""></div>
+        </section>
+        <section class="receta-detalle">
+            <article class="ingredientes">
+                <ul>Ingredientes para el Salmón a la Parrilla:
+                    <li><div>Filetes de salmón fresco</div><div>4 filetes</div></li>
+                    <li><div>Aceite de oliva</div><div>2 cucharadas</div></li>
+                    <li><div>Jugo de limón</div><div>2 cucharadas</div></li>
+                    <li><div>Ajo picado</div><div>2 dientes</div></li>
+                    <li><div>Perejil fresco picado</div><div>2 cucharadas</div></li>
+                    <li><div>Sal y pimienta al gusto</div></li>
+                </ul>
+                
+            </article>
+            <article class="preparacion"><h2>Preparacion:</h2>
+                <ul>
+                    <li><div>En un tazón pequeño, mezcla el aceite de oliva, el jugo de limón, el ajo picado y el perejil fresco picado.</div></li>
+                    <li><div>Sazona los filetes de salmón con sal y pimienta al gusto.</div></li>
+                    <li><div>Cepilla los filetes de salmón con la mezcla de aceite y hierbas por ambos lados.</div></li>
+                    <li><div>Calienta la parrilla a fuego medio-alto y engrasa la parrilla para evitar que el salmón se pegue.</div></li>
+                    <li><div>Coloca los filetes de salmón en la parrilla caliente, con la piel hacia abajo. Cocina durante 4-5 minutos.</div></li>
+                    <li><div>Gira los filetes y cocina durante otros 4-5 minutos o hasta que el salmón esté cocido y se desmenuce fácilmente con un tenedor.</div></li>
+                    <li><div>Sirve el salmón a la parrilla caliente con rodajas de limón y perejil fresco.</div></li>
+                </ul>  
+            </article>
+        </section>
+    </main>
+    
+    <!-- El header se cargade forma dinamica -->
+    <footer id="footer"></footer>
+
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../../js/main.js"></script> 
+
+</body>
+</html>

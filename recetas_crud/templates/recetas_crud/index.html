@@ -1,13 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Estilo general -->
+    <!-- Estilo general
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer.css"> -->
+
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/style.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'recetas_crud/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/footer.css' %}"> -->
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,11 +42,14 @@
     
     <!-- TITULO -->
     <title>Las recetas del 8</title>
+    <title>Recetas Crud 1.0 {% block title %}{% endblock %}</title>
+
 </head>
 
 <body>
     <!-- El header se carga de forma externa -->
-    <header id="header" class="header"></header>
+    <!-- <header id="header" class="header"></header> -->
+    {% include 'recetas_crud/includes/header.html' %}
     
     <section class="navegacion">
         <nav class="nav">
@@ -62,7 +71,8 @@
             <h2>Receta del día</h2>
             <div class="recipe-content">
                 <article>
-                    <img src="./images/BIANCA.jpeg" alt="Pizza Bianca">
+                    <img src="{% static 'recetas_crud/images/BIANCA.jpeg' %}" alt="Pizza Bianca">
+                    <!-- <img src="../images/BIANCA.jpeg" alt="Pizza Bianca"> -->
                     <h3>Pizza Bianca</h3>
                     <p>Disfruta de esta deliciosa pizza casera con tomate, mozzarella y albahaca.</p>
                     <a href="./pages/Natalia/bianca.html">Ver Receta</a>
@@ -83,7 +93,8 @@
             <div class="recipe-container">
                 
                 <article>
-                    <img src="./images/salmon-a-la-plancha.jpg" alt="Salmon Grille">
+                    <img src="{% static 'recetas_crud/images/salmon-a-la-plancha.jpg' %}" alt="Salmon a la plancha">
+                    <!-- <img src="./images/salmon-a-la-plancha.jpg" alt="Salmon Grille"> -->
                     <h3>Salmon Grille</h3>
                     <p>Prepara esta clásico plato de salmon grillado.</p>
                     <a href="./pages/recetas_nicolas/salmon-grille.html">Ver Receta</a>
@@ -91,7 +102,8 @@
 
                 
                 <article class="choco">
-                    <img src="./images/ROQUEFORT.jpeg" alt="Salmon Grille">
+                    <img src="{% static 'recetas_crud/images/ROQUEFORT.jpeg' %}" alt="pizza roquefort">
+                    <!-- <img src="./images/ROQUEFORT.jpeg" alt="pizza roquefort"> -->
                     <h3>Pizza Roquefort</h3>
                     <p>Prepara esta pizza deliciosa perfeccionada por Natalia!.</p>
                     <a href="./pages/Natalia/roquefort.html">Ver Receta</a>
@@ -109,19 +121,14 @@
                 </iframe>
             </article>
         </section>
-        
-        
-        
-        
-        
-
     </main>
 
     <!-- El footer se carga de forma externa -->
-    <footer id="footer"></footer>
+    <!-- <footer id="footer"></footKer> -->
+    {% include 'recetas_crud/includes/footer.html' %}
     
     <!-- Enlaza el archivo JavaScript -->
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
 
 </body>
 </html>

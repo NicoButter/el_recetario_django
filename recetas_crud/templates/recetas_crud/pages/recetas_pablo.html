@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
+    
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/chef.css">
+    
+    <!--Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Las recetas del 8</title>
+
+</head>
+<body>
+    <header id= "header" class="header">
+    </header>
+    
+    <section class="navegacion">
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <!-- <li><a href="#">Recetas</a></li> -->
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="productos">
+            <h3>busca un producto</h3>
+            <form id="search-form" action="./producto.html" method="get">
+                <input type="text" id="search-input" name="product-name" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+    
+    <main>
+        
+        <section class="chef">
+           <div class="foto"><img src="../images/foto_pablo.jpg" alt="Icono"></div>
+           <h2 class="Nombre">Pablo Iglesias</h2>
+           <article>Empezó a trabajar a los 16 años con su madre, Susana Castro Videla, experta restauranter, en las cocinas del colegio Marín y del Club Náutico San Isidro, Buenos Aires.
+            Estudió cocina con Alicia Berger durante muchos años ganando bajo su escuela el concurso de jóvenes chef en dos oportunidades.
+            Más tarde, perfeccionó sus estudios gastronómicos en Francia. Allí llegó a trabajar en el hotel Ritz de París, en Le Cordon Bleu y en otros restaurantes de la misma ciudad.
+            En los años siguientes, Christian viajó a California para continuar su carrera en la Academia Culinaria de San Francisco.
+            Junto a su familia, lleva adelante Los Petersen Cocineros, empresa de catering con más de 25 años de trayectoria.
+            Ha trabajado durante de más de 12 años en programas de televisión mostrando su talento y destreza a la hora de cocinar.
+            Hoy está en la pantalla de elgourmet, junto a su hermano Roberto.</article>
+        </section>
+
+        
+        <section class="listado-recetas"> 
+            <h2 class="titulo">Sus Recetas</h2>
+            <div class="receta">
+                <a href="../pages/Pablo/cheese_cake.html">
+                    <div class="receta-imagen"><img src="../images/chesse_cake.webp" alt=""></div>  
+                    <div class="receta-nombre">Cheese cake
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>  
+                </a>
+            </div>
+            <div class="receta">
+                <a href="../pages/Pablo/chocotorta.html">
+                    <div class="receta-imagen"><img src="../images/chocotorta.webp" alt=""></div>  
+                    <div class="receta-nombre">Chocotorta
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>    
+                </a>
+            </div>
+            <div class="receta">
+                <a href="../pages/Pablo/torta_marroc.html">
+                    <div class="receta-imagen"><img src="../images/marroc.webp" alt=""></div>         
+                    <div class="receta-nombre">Torta Marroc
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer id="footer"></footer>
+
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+
+</body>
+</html>

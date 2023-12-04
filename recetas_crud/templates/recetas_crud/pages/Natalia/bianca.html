@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/receta.css">
+    
+    <!--Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="manifest" href="../../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Las recetas del 8</title>
+
+</head>
+<body>
+    
+    <!-- El header se carga de forma dinamica -->
+    <header id= "header" class="header"></header>
+    
+    <section class="navegacion">
+        <nav class="nav">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <!-- <li><a href="#">Recetas</a></li> -->
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="productos">
+            <h3>busca un producto</h3>
+            <form id="search-form" action="../producto.html" method="get">
+                <input type="text" id="search-input" name="product-name" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>   
+    <main>
+        <section class="receta-titulo">
+            <article>
+                <div class="texto">
+                    <h2>Pizza Bianca</h2>
+                    <p>Aprende a realizar esta deliciosa receta de pizza Bianca realizada por nuestro chef Natalia Palmieri en minutos</p>
+                </div>
+            </article>    
+            <div class="receta-imagen"><img src="../../images/BIANCA.jpeg" alt="Pizza Bianca"></div>
+        </section>
+        <section class="receta-detalle">
+            <article class="ingredientes">
+                
+              <h2>Ingredientes</h2>
+              <h3>Para la masa</h3>
+              <ul>
+                  <li>370 gr de harina de trigo común</li>
+                  <li>220 ml de agua tibia</li>
+                  <li>3 gr levadura fresca</li>
+                  <li>2 cda de aceite</li>
+                  <li>1 cda de sal</li>
+              </ul>
+              <h3>Para el relleno</h3>
+              <ul>
+                  <li>150 gr de mozzarella búfala</li>
+                  <li>70 gr de queso cabra</li>
+                  <li>1 cebolla blanca</li>
+                  <li>70 gr de tocineta</li>
+                  <li>1 cda de salvia</li>
+                  <li>1 cda de orégano</li>
+                  <li>1 cda de pimienta</li>
+              </ul>
+            </article>
+            <article class="preparacion"><h2>Preparacion:</h2>
+              <h2>Procedimiento</h2>
+              <p>Preparemos la masa:
+                  En un bol, agrega el harina y la sal y la levadura, revuelve hasta incorporar los ingredientes secos.
+                  Abre un espacio en el medio, tipo volcán para añadir el aceite y el agua.
+                  Iniciemos a amasar con las manos hasta lograr una masa homogénea y suave.
+                  Pasemos nuestra masa a la encimera de la cocina previamente enharinada para estirar muy bien y lograr una textura muy manejable. Haz de tu masa una bola y guárdala en un bol para dejar levar por 1 hora.
+                  Armemos nuestra pizza bianca:
+                  Mientras la masa temina de levar, vas a rallar los quesos por separado y reservarás.
+                  Corta la cebolla en julianas y la tocineta en tiras.
+                  Precalienta tu horno a 180° grados centígrados.
+                  Toma tu masa y vamos a estirar muy bien hasta tener una base bien delgada. Le darás forma a tu base de acuerdo al modelo de tu bandeja, si es redonda o cuadrada. Te recomiendo que sea redonda para mantener la tradición.
+                  Una vez estirada tu masa, la colocarás encima de la bandeja y retirarás los excesos de masa.
+                  Esparce el queso mozzarella en toda la superficie de la pizza.
+                  Luego añadirás la cebolla y la tocineta cortada.
+                  Vas a esparcir todos los condimentos por toda la superficie.
+                  Posteriormente, cubrirás con el queso de cabra.
+                  Llevemos nuestra pizza bianca al horno por 15 minutos hasta que el queso esté derretido, la salsa se haya adherido a la base y la masa esté completamente crujiente.
+                  ¡Listo! Hemos terminado nuestra pizza bianca puedes degustarla.
+                  TRUCOS PARA TU PIZZA BIANCA
+                  Para que tu pizza bianca sea aún más deliciosa, puedes añadirle queso parmesano o pecorino para intensificar su sabor. Esa combinación con el resto de los quesos será sensacional. Asimismo, atrévete a añadirle a la superficie de tu pizza bianca rúcula, prosciutto, jamón e incluso espinacas o champiñones.
+      
+              </p>
+            </article>
+        </section>
+    </main>
+    
+    <!-- El header se cargade forma dinamica -->
+    <footer id="footer"></footer>
+
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../../js/main.js"></script> 
+
+</body>
+</html>
