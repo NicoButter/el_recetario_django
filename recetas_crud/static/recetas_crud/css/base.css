@@ -5,12 +5,14 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-image: url("{% static 'recetas_crud/images/fondo_recetas.jpg' %}");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #FAEDCD;
     display: flex;
     flex-direction: column;
-
     min-height: 100vh;
-
     font-family: "Roboto", sans-serif;
     font-weight: regular;
 }
@@ -48,7 +50,6 @@ header .logo .logoDelicias {
     transition: all 0.3s;
     background-image: url('../static/recetas_crud/images/logo_recetas_deliciosas.png');
 }
-
 
 main{
     flex:1;

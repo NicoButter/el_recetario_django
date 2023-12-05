@@ -1,4 +1,100 @@
+
+
+
+
+/* recetas_crud/css/receta_listado.css */
+
 section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.fecha {
+    color: #888;
+}
+
+.acciones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ver,
+.modificar,
+.borrar {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ver {
+    background-color: #4CAF50; /* Verde */
+}
+
+.modificar {
+    background-color: #008CBA; /* Azul */
+}
+
+.borrar {
+    background-color: #f44336; /* Rojo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section {
     background-color: burlywood;
 
     flex: 1;
@@ -62,4 +158,4 @@ section article .acciones a.borrar{
 
 section article .acciones a:hover {
     background-color: black;
-} 
+}  */
