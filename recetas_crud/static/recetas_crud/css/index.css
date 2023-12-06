@@ -1,14 +1,15 @@
-body{
-    background-image: url("{% static 'recetas_crud/images/fondo_recetas.jpg' %}");
+h1 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../images/fondo_base.png");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
-.descripcion {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: burlywood;
-}
+

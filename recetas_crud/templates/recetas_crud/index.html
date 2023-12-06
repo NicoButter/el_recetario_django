@@ -5,13 +5,26 @@
 {% block section_title %} crea, modifica y elimina recetas desde aqui!! {% endblock %}
 
 {% block extra_css %} 
-    <link rel="stylesheet" href="{% static 'receta_crud/css/index.css' %} ">
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/index.css' %} ">
 {% endblock %}  
+<style>
+    body {
+        background-image: url("{% static 'recetas_crud/images/fondo_base.png' %}");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+</style>
+
+<body >
+    
 
 {% block main %}
-    <p class="descripcion">
+    <h1>
         Esta es una aplicación web para la manipulacion de recetas.
         <br>
         Realizado en el curso de Fullstack Python 2do Cuatrimestre 2023 - comisión 23533 - grupo 8.
     </p>
 {% endblock %}
+
+</body>

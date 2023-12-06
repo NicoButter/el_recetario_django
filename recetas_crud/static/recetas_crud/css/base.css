@@ -2,13 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} 
 
 body {
-    background-image: url("{% static 'recetas_crud/images/fondo_recetas.jpg' %}");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
     background-color: #FAEDCD;
     display: flex;
     flex-direction: column;
@@ -35,7 +31,7 @@ header {
 }
 
 header h1 {
-    margin-left: 20px; /* O el margen que prefieras para separar el logo del título */
+    margin-left: 20px; 
 }
 
 header h2 {
@@ -48,7 +44,6 @@ header .logo .logoDelicias {
     object-fit: contain;
     object-position: center;
     transition: all 0.3s;
-    background-image: url('../static/recetas_crud/images/logo_recetas_deliciosas.png');
 }
 
 main{
