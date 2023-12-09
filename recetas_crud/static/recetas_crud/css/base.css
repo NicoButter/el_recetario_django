@@ -93,37 +93,6 @@ h2 {
     margin-right: 30px;
 }
 
-article form {
-    background-color: cornflowerblue;
-    padding: 50px 25px;
-    height: 50vh;
-}
-
-form p {
-    padding: 15px;
-    background-color: rgba(255,255,225, 0.5);
-    margin: 15px 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-form p input {
-    height: 30px;
-}
-
-form input[type=submit]{
-    background-color: darkolivegreen;
-
-    padding: 15px;
-    width: 100%;
-    margin-bottom: 15px;
-
-    color: white;
-    font-weight: bold;
-}
-
 footer {
     display: grid; /* Habilita el modelo de caja flexible */
     grid-template-columns: auto auto auto auto;

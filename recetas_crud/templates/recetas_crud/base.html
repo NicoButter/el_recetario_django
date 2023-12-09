@@ -33,9 +33,12 @@
     </header>
     <nav class="barra-navegacion">
         <ul class="botones-menu">
-            <li><a href="http://127.0.0.1:5500/index.html">Volver</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Recetario</a></li>
             <li><a href="{% url 'receta_listado' %}">Recetas</a></li>
             <li><a href="{% url 'receta_crear' %}">Cargar receta</a></li>
+            {% if request.get_full_path != '/recetas/' %}
+                <li><a href="http://127.0.0.1:8000/recetas/">atras</a></li>
+            {% endif %}
         </ul>
     </nav>
     <main>

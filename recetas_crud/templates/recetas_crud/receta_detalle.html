@@ -10,8 +10,16 @@
 
 {% block main %}
     <article>
-        <h3>{{object.titulo}} ({{object.categoria}})</h3>
-        <p>Creada el dia {{object.fecha_fin}}</p>
-        <p>{{object.descripcion}}</p>
+        <h3>{{object.nombre}}</h3>
+        {% if receta.imagen %}
+            <img src="{{ receta.imagen.url }}" alt="{{ receta.nombre }} Imagen" width="200" height="150">
+        {% else %}
+            <p>No hay imagen disponible</p>
+        {% endif %}
+        <p><strong>Descripción:</strong> {{ object.descripcion }}</p>
+        <p><strong>Ingredientes:</strong> {{ object.ingredientes }}</p>
+        <p><strong>Preparación:</strong> {{ object.preparacion }}</p>
+        <p><strong>Autor:</strong> {{ object.autor }}</p>
+        <p><strong>Fecha de creación:</strong> {{ object.fecha_de_creacion }}</p>
     </article>
 {% endblock %}

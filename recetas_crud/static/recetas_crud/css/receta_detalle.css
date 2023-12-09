@@ -1,4 +1,21 @@
 article {
-    padding: 50px;
-    background-color: aliceblue;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FAFEDE;
+    border-radius: 10px;
+    background-color: #CCD5AE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
 }
