@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+el_recetario_django/el_recetario_django_venv
