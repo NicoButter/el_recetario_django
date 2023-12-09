@@ -1,15 +1,36 @@
-h1 {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
     background-image: url("../images/fondo_base.png");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+}
+
+/* recetas_crud/css/index.css */
+
+.botones-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-top: 20px; /* Ajusta la distancia desde la parte superior */
+}
+
+.botones-menu li {
+    margin-right: 20px; /* Ajusta el espacio entre los botones */
+}
+
+.botones-menu a {
+    text-decoration: none;
+    background-color: #FEFAE0;
+    padding: 20px; /* Ajusta el tamaño de los botones */
+    border-radius: 8px; /* Ajusta la esquina redondeada de los botones */
+    color: black;
+    transition: all 0.2s;
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+}
+
+.botones-menu a:hover {
+    background-color: black;
+    color: white;
 }
 
 

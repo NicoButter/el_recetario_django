@@ -46,6 +46,39 @@ header .logo .logoDelicias {
     transition: all 0.3s;
 }
 
+.barra-navegacion {
+    background-color: #CCD5AE;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.botones-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.botones-menu li {
+    margin-right: 20px;
+}
+
+.botones-menu a {
+    text-decoration: none;
+    background-color: #FEFAE0;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    transition: all 0.2s;
+    font-size: 18px;
+}
+
+.botones-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
 main{
     flex:1;
 
@@ -55,50 +88,9 @@ main{
     align-items: center;
 }
 
-ul {
-    list-style-type: none;
-}
-nav {
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 10px; 
-}
-
-nav ul li:last-child {
-    margin-right: 0; 
-}
-
-nav ul li a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #FEFAE0;;
-
-    padding: 15px; 
-    border-radius: 5px;
-    color: black;
-
-    transition: all 0.2s;
-}
-
 h2 {
     margin-top: 10px; 
     margin-right: 30px;
-}
-
-nav ul li a:hover {
-    background-color: black;
-    color: white;
 }
 
 article form {

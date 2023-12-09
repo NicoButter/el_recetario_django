@@ -1,22 +1,24 @@
 {% extends "recetas_crud/base.html" %}
 {% load static %}
-
 {% block title %} Recetas sugeridas {% endblock %}
 {% block section_title %} Listado de recetas sugeridas {% endblock %}
-
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'recetas_crud/css/receta_listado.css' %}">
 {% endblock %}
-
 {% block main %}
     <section>
         {% for receta in receta_listado %}
             <article>
                 <div class="contenido">
-                    <h3>{{receta.titulo}} - <span>[ {{receta.descripcion}} ]</span></h3>
-                    <p>{{reeta.preparacion}}</p>
-                    <p></p>
-                    <p class="fecha">{{receta.fecha_de_creacion}}</p>
+                    <h2>{{receta.nombre}}</h2> 
+                    {% if receta.imagen %}
+                        <img src="{{ receta.imagen.url }}" alt="{{ receta.nombre }} Imagen" width="200" height="150">
+                    {% else %}
+                        <p>No hay imagen disponible</p>
+                    {% endif %}
+                    <h1>{{receta.descripcion}}</h1>
+                    <p class="autor">Autor: {{ receta.autor }}</p>
+                    <p class="fecha"> Agregado: {{receta.fecha_de_creacion}}</p>
                 </div>
                 <div class="acciones">
                     <a class="ver" href="{% url 'receta_detalle' pk=receta.id %}">Ver</a>
@@ -24,12 +26,10 @@
                     <a class="borrar" href="{% url 'receta_borrar' pk=receta.id %}">Borrar</a>
                 </div>
             </article>
-
         {% empty %}
             <article>
                 No hay recetas disponibles.
             </article>
         {% endfor %}
-
     </section>
 {% endblock %}
