@@ -5,7 +5,7 @@
 {% block section_title %} Borrado de receta {% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'receta_borrar.css' %}">
+    <link rel="stylesheet" href="{% static 'recetas_crud/css/receta_borrar.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -13,9 +13,13 @@
         <h3>Borrar Receta</h3>
         <form method="post">
             {% csrf_token %}
-            <p>Estás seguro de borrar la receta: "<b>{{ object }}</b>"?</p>
-            {{ form }}
-            <input type="submit" value="Confirm">
+            <p class="parrafo-advertencia">¿Estás seguro de borrar la receta "{{ object.nombre }}"?</p>
+            <div class="receta-info">
+                <img src="{{ object.imagen.url }}" alt="{{ object.nombre }} Imagen" width="200" height="150">
+            </div>
+            <div class="confirm-button">
+                <input type="submit" value="Confirmar Borrado">
+            </div>
         </form>
     </article>
 {% endblock %}

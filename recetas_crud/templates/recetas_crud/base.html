@@ -12,14 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
     
-
     <link rel="stylesheet" href="{% static 'recetas_crud/css/base.css' %}">
 
     {% block extra_css %}{% endblock %}
 </head>
 
-<body>
-    
+<body> 
     <header>
         <div class="logo">
             <a class="enlace_logo_delicias" href="#">
@@ -33,11 +31,11 @@
     </header>
     <nav class="barra-navegacion">
         <ul class="botones-menu">
-            <li><a href="http://127.0.0.1:5500/index.html">Recetario</a></li>
-            <li><a href="{% url 'receta_listado' %}">Recetas</a></li>
-            <li><a href="{% url 'receta_crear' %}">Cargar receta</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Volver al recetario</a></li>
+            <li><a href="{% url 'receta_listado' %}">Listar las Recetas</a></li>
+            <li><a href="{% url 'receta_crear' %}">Cargar nueva receta</a></li>
             {% if request.get_full_path != '/recetas/' %}
-                <li><a href="http://127.0.0.1:8000/recetas/">atras</a></li>
+                <li><a href="http://127.0.0.1:8000/recetas/"> Bienvenido al CURD</a></li>
             {% endif %}
         </ul>
     </nav>
